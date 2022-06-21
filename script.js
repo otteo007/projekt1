@@ -27,6 +27,7 @@ function getPokemon(e) {
         <p>Weight: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
         <p>Ability ${data.ability}</p>
+        <p>rarity ${data.rarity}</p>
       </div>`;
     })
     .catch((err) => {
