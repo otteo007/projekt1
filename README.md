@@ -1,9 +1,1 @@
-# projekt1
-<https://pokeapi.co/api/v2/pokemon/pikachu>
-
-# projekt2
-
-
-# PokéAPI JavaScript
-
-# test
+# Eine Webseite, womit man sich Pokémons angucken kann
