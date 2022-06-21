@@ -24,14 +24,14 @@ function getPokemon(e) {
       </div>
       <div class="pokemonInfos">
         <h1>${capitalizeFirstLetter(data.name)}</h3>
-        <p>Weight: ${data.weight}</p>
+        <p>Gewicht: ${data.weight}</p>
       </div>`;
     })
     .catch((err) => {
       document.querySelector(".pokemonBox").innerHTML = `
-      <h4>Pokemon not found 😞</h4>
+      <h4>Pokemon nicht gefunden 😞</h4>
       `;
-      console.log("Pokemon not found", err);
+      console.log("Pokemon nicht gefunden", err);
     });
 
   e.preventDefault();
