@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>PokéAPI</title>
-</head>
-<BODY background="hintergrundbild1.jpg">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon API</title>
+  </head>
+  <body>
     <main>
-        <img src="hintergrundbild.jpg" width="50" height="50" />
+      <div class="searchBox">
+        <input
+          id="pokemonName"
+          type="Pokemon name"
+          placeholder="Pokemon name"
+        />
+        <button id="search">🔎</button>
+      </div>
 
-        <h1><p align="center"><b><font size="+2"><font face="Jokerman">Alle Pokémon stats</font></font></b></p></h1>     
-        <hr>
-        
-        <p align="center"> <div class="searchbox">
-            <input id="pokemonName" type = "text" placeholder="Name des Pokémons">
-            <button id="searchbutton">🔍</button>
-        </div></p>
-
-        
-
-
+      <div class="pokemonBox"></div>
     </main>
+
     <script src="script.js"></script>
-    
-    
-</body>
+  </body>
 </html>
