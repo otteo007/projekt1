@@ -24,8 +24,9 @@ function getPokemon(e) {
       </div>
       <div class="pokemonInfos">
         <h1>${capitalizeFirstLetter(data.name)}</h3>
-        <p>Weight: ${data.weight}</p>
+        <p>Gewicht: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
+        <p>Item: ${data.item}</p>
       </div>`;
     })
     .catch((err) => {
