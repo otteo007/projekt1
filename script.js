@@ -26,18 +26,14 @@ function getPokemon(e) {
         <h1>${capitalizeFirstLetter(data.name)}</h3>
         <p>Weight: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
-<<<<<<< HEAD
+
         <p>types: ${data.types}</p>
         <p>stats: ${data.stats}</p>
-=======
-<<<<<<< HEAD
         <p>URL: ${data.url}</p>
-=======
         <p>Ability: ${data.slot}</p>
         <p>rarity: ${data.rarity}</p>
->>>>>>> db5c27f9ff45d1a59df4676110f1cb30d6e7d6de
->>>>>>> cd5d0475b89e6f57fe2b8761e9cd65dbdfb2ee48
-      </div>`;
+        
+      </div>`
     })
     .catch((err) => {
       document.querySelector(".pokemonBox").innerHTML = `
