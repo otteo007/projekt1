@@ -30,6 +30,7 @@ function getPokemon(e) {
         <p>types: ${data.types}</p>
         <p>versions: ${data.versions}</p>
         <p>URL: ${data.url}</p>
+        <p>id: ${data.id}
       
 
       </div>`
