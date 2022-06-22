@@ -31,6 +31,7 @@ function getPokemon(e) {
         <p>versions: ${data.versions}</p>
         <p>URL: ${data.url}</p>
         <p>id: ${data.id}
+        <p>base experience ${data.base_experience}
       
 
       </div>`
