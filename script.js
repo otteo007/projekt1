@@ -30,6 +30,7 @@
           <p>URL: ${data.url}</p>
       <p>species: ${data.species}</p>
           <p>rarity: ${data.rarity}</p>
+          <p>order: ${data.order}</p>
           <p>test</p>
  
         </div>`;
