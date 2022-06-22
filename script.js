@@ -28,8 +28,11 @@
           <p>Größe: ${data.height}</p>
 
           <p>URL: ${data.url}</p>
-      <p>Ability: ${data.slot}</p>
+      <p>species: ${data.species}</p>
           <p>rarity: ${data.rarity}</p>
+          <p>order: ${data.order}</p>
+          <p>abilities: ${data.abilities}</p>
+          
           <p>test</p>
  
         </div>`;
