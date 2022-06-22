@@ -22,6 +22,12 @@
 
   }
 
+  function abilities(abilities) {
+    for(let i = 0; i < abilities.length; i++) {
+      return abilities[i].ability.name;
+    }
+  }
+
   function getPokemon(e) {
     const name = document.querySelector("#pokemonName").value;
     const pokemonName = lowerCaseName(name);
@@ -39,8 +45,8 @@
         <div class="pokemonInfos">
           <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
           
-          <p>Das Pokemon hält folgende items: ${heldItems(data.held_items)}, ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
-          Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}.</p>
+          <p>Das Pokemon hält folgendes item: ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+          Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokemon hat folgende abilities: ${abilities(data.abilities)}.</p>
 
           
           
