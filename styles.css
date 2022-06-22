@@ -10,8 +10,13 @@
 
 .pokemonInfos {
     transform:translate(0px, -250px);
+    border: 2px black solid;
+    width: 475px;
+    height: 500px;
 }
 
 .trennLinie1 {
     transform:translate(0px, -500px);
 }
+
+
