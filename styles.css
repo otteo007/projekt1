@@ -4,7 +4,10 @@
 }
 
 .pokemonIcon {
-    transform:translate(50%, 30%);
+    transform:translate(225%, 20%);
+    border: 2px black solid;
+    width: 30%;
+    height: 100%;
 }
 
 .pokemonInfos {
@@ -12,5 +15,10 @@
     border: 2px black solid;
     width: 30%;
     height: 100%;
+}
+
+
+body {
+    background-attachment: fixed;
 }
 
