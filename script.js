@@ -28,7 +28,7 @@ function getPokemon(e) {
         <p>Größe: ${data.height}</p>
 
         <p>types: ${data.types}</p>
-        <p>stats: ${data.stats}</p>
+        <p>versions: ${data.versions}</p>
         <p>URL: ${data.url}</p>
       
 
