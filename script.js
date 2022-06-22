@@ -28,7 +28,7 @@
           <p>Größe: ${data.height}</p>
 
           <p>URL: ${data.url}</p>
-      <p>Ability: ${data.slot}</p>
+      <p>species: ${data.species}</p>
           <p>rarity: ${data.rarity}</p>
           <p>test</p>
  
