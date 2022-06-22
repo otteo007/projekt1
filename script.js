@@ -12,7 +12,7 @@
     const name = document.querySelector("#pokemonName").value;
     const pokemonName = lowerCaseName(name);
 
-<<<<<<< HEAD
+ HEAD
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
     .then((response) => response.json())
     .then((data) => {
@@ -39,7 +39,6 @@
       `;
       console.log("Pokemon nicht gefunden", err);
     });
-=======
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((response) => response.json())
       .then((data) => {
