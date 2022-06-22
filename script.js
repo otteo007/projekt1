@@ -30,9 +30,8 @@ function getPokemon(e) {
         <p>types: ${data.types}</p>
         <p>stats: ${data.stats}</p>
         <p>URL: ${data.url}</p>
-        <p>Ability: ${data.slot}</p>
-        <p>rarity: ${data.rarity}</p>
-        
+      
+
       </div>`
     })
     .catch((err) => {
