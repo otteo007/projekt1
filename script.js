@@ -8,6 +8,12 @@
     return string.toLowerCase();
   }
 
+  function heldItems(heldItems) {
+    for(let i = 0; i < heldItems.length; i++) {
+      return heldItems[i].item.name;
+    }
+  }
+
   function getPokemon(e) {
     const name = document.querySelector("#pokemonName").value;
     const pokemonName = lowerCaseName(name);
@@ -24,7 +30,8 @@
         </div>
         <div class="pokemonInfos">
           <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
-          <p>${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+          
+          <p>Das Pokemon hält folgendes item: ${heldItems(data.held_items)}  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
           Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}.</p>
 
           
@@ -37,6 +44,7 @@
         <h4>Pokemon nicht gefunden 😞</h4>
         `;
         console.log("Pokemon nicht gefunden", err);
+
       });
 
     e.preventDefault();
