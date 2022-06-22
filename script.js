@@ -10,7 +10,7 @@
 
   function heldItems(heldItems) {
     for(let i = 0; i < heldItems.length; i++) {
-      return heldItems[i].items.name;
+      return heldItems[i].item.name;
     }
   }
 
