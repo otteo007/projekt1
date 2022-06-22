@@ -53,12 +53,7 @@
           <h1>${capitalizeFirstLetter(data.name)}</h3>
           <p>Weight: ${data.weight}</p>
           <p>Größe: ${data.height}</p>
->>>>>>> a64b40a3076c7cc4500ec659807934c8ece6f890
-
-          <p>URL: ${data.url}</p>
-      <p>Ability: ${data.slot}</p>
-          <p>rarity: ${data.rarity}</p>
- 
+          
         </div>`;
       })
       .catch((err) => {
