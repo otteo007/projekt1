@@ -26,12 +26,8 @@ function getPokemon(e) {
         <h1>${capitalizeFirstLetter(data.name)}</h3>
         <p>Weight: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
-
-        <p>types: ${data.types}</p>
-        <p>versions: ${data.versions}</p>
-        <p>URL: ${data.url}</p>
         <p>id: ${data.id}
-        <p>base experience ${data.base_experience}
+        <p>base experience: ${data.base_experience}
       
 
       </div>`
