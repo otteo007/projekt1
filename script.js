@@ -24,13 +24,17 @@
         </div>
         <div class="pokemonInfos">
           <h1>${capitalizeFirstLetter(data.name)}</h3>
-          <p>Gewichtö: ${data.weight}</p>
+          <p>Weight: ${data.weight}</p>
           <p>Größe: ${data.height}</p>
+<<<<<<< HEAD
+          
+=======
 
           <p>URL: ${data.url}</p>
       <p>Ability: ${data.slot}</p>
           <p>rarity: ${data.rarity}</p>
  
+>>>>>>> 607a92fe294be905647a4d1d47a03d560299a22a
         </div>`;
       })
       .catch((err) => {
