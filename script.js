@@ -26,7 +26,7 @@ function getPokemon(e) {
         <h1>${capitalizeFirstLetter(data.name)}</h3>
         <p>Weight: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
-        <p>id: ${data.id}
+        <p>Pokemon Nummer: ${data.id}
         <p>base experience: ${data.base_experience}
       
 
