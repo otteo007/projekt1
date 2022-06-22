@@ -25,7 +25,7 @@
         <div class="pokemonInfos">
           <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
           <p>${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
-          Das Pokémon hat die ID ${data.id}.</p>
+          Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}.</p>
 
           
           
