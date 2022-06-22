@@ -23,17 +23,12 @@
           />
         </div>
         <div class="pokemonInfos">
-          <h1>${capitalizeFirstLetter(data.name)}</h3>
-          <p>Weight: ${data.weight}</p>
-          <p>Größe: ${data.height}</p>
+          <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
+          <p>${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+          Das Pokémon hat eine ID von ${data.id}.</p>
 
-          <p>URL: ${data.url}</p>
-      <p>species: ${data.species}</p>
-          <p>rarity: ${data.rarity}</p>
-          <p>order: ${data.order}</p>
-          <p>abilities: ${data.abilities}</p>
           
-          <p>test</p>
+          
  
         </div>`;
       })
