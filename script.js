@@ -16,7 +16,7 @@
       .then((response) => response.json())
       .then((data) => {
         document.querySelector(".pokemonBox").innerHTML = `
-        <div>
+        <div class="pokemonIcon">
           <img
             src="${data.sprites.other["official-artwork"].front_default}"
             alt="Name des Pokemons"
