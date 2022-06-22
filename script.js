@@ -19,22 +19,31 @@ function getPokemon(e) {
       <div>
         <img
           src="${data.sprites.other["official-artwork"].front_default}"
-          alt="Pokemon name"
+          alt="Name des Pokemons"
         />
       </div>
       <div class="pokemonInfos">
         <h1>${capitalizeFirstLetter(data.name)}</h3>
         <p>Weight: ${data.weight}</p>
         <p>Größe: ${data.height}</p>
+<<<<<<< HEAD
         <p>types: ${data.types}</p>
         <p>stats: ${data.stats}</p>
+=======
+<<<<<<< HEAD
+        <p>URL: ${data.url}</p>
+=======
+        <p>Ability: ${data.slot}</p>
+        <p>rarity: ${data.rarity}</p>
+>>>>>>> db5c27f9ff45d1a59df4676110f1cb30d6e7d6de
+>>>>>>> cd5d0475b89e6f57fe2b8761e9cd65dbdfb2ee48
       </div>`;
     })
     .catch((err) => {
       document.querySelector(".pokemonBox").innerHTML = `
-      <h4>Pokemon not found 😞</h4>
+      <h4>Pokemon nicht gefunden 😞</h4>
       `;
-      console.log("Pokemon not found", err);
+      console.log("Pokemon nicht gefunden", err);
     });
 
   e.preventDefault();
