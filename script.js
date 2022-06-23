@@ -8,32 +8,8 @@ function lowerCaseName(string) {
   return string.toLowerCase();           
 }
 
-function heldItems(heldItems) {
 
 
-
-  //  for(let i = 0; i < heldItems.length; i++) {
-      
-      
-    //  return heldItems[i].item.name
-      
-
-    //}
-
-
-    let n = 0;
-
-    
-    
-  
-    
-    
-   
-    
-    
-  
-
-}
 
 function abilities(abilities) {
   for(let i = 0; i < abilities.length; i++) {
