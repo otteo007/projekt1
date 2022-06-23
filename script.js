@@ -8,23 +8,38 @@ function lowerCaseName(string) {
   return string.toLowerCase();           
 }
 
-
-
+  
 function heldItems(heldItems) {
-    for(let i = 0; i < heldItems.length; i++) 
-    {
-      if (i == 0)
-      {
-        helditems_list = "folgende Items:";
-        helditems_list =  helditems_list + heldItems[i].item.name;
-      }
-      else
-      {		
-        helditems_list =  helditems_list + " und " + heldItems[i].item.name;
-      }
+  helditems_list = "die Items ";
+  for(let i = 0; i < heldItems.length; i++) 
+  {
+
+    if (i == heldItems.length -1)  
+    {		
+      
+
+      helditems_list = helditems_list + " und " + heldItems[i].item.name;
+      
+
     }
-    return helditems_list;
-   }
+    else
+    {
+
+        if(i == 0) {
+          helditems_list =  helditems_list + heldItems[i].item.name;
+        } else {
+          helditems_list =  helditems_list + ", " + heldItems[i].item.name;
+        }
+       
+      
+      
+    }
+    
+
+  }
+  return helditems_list;
+ }
+
 
 function abilities(abilities) {
   for(let i = 0; i < abilities.length; i++) {
@@ -50,7 +65,7 @@ function getPokemon(e) {
       <div class="pokemonInfos">
         <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
         
-        <p>Das Pokemon hält folgendes item: ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+        <p>Das Pokemon hält ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
         Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokemon hat folgende abilities: ${abilities(data.abilities)}.</p>
 
         
