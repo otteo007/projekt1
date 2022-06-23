@@ -8,7 +8,6 @@ function lowerCaseName(string) {
   return string.toLowerCase();           
 }
 
-function heldItems(heldItems) {
 
 
 
