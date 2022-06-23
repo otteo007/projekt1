@@ -10,7 +10,7 @@ function lowerCaseName(string) {
 
   
 function heldItems(heldItems) {
-  helditems_list = "die Items ";
+  helditems_list = "";
   for(let i = 0; i < heldItems.length; i++) 
   {
 
@@ -41,11 +41,40 @@ function heldItems(heldItems) {
  }
 
 
+ function getmovescount(moves) {
+    return moves.length;
+ }
+
+
 function abilities(abilities) {
-  for(let i = 0; i < abilities.length; i++) {
-    return abilities[i].ability.name;
+  ability_list = "";
+  for(let i = 0; i < abilities.length; i++) 
+  {
+
+    if (i == abilities.length -1)  
+    {		
+      
+
+      ability_list = ability_list + " und " + abilities[i].ability.name;
+      
+
+    }
+    else
+    {
+
+        if(i == 0) {
+          ability_list =  ability_list + abilities[i].ability.name;
+        } else {
+          ability_list =  ability_list + ", " + abilities[i].ability.name;
+        }
+       
+      
+      
+    }
     
+
   }
+  return ability_list;
 }
 
 function getPokemon(e) {
@@ -63,13 +92,16 @@ function getPokemon(e) {
         />
       </div>
       <div class="pokemonInfos">
-        <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
+        <h1  align="center"><u>${capitalizeFirstLetter(data.name)}</u></h3>
         
-        <p>Das Pokemon hält ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
-        Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokemon hat folgende abilities: ${abilities(data.abilities)}.</p>
-
-        
-        
+        <p align="center"> Name: ${capitalizeFirstLetter(data.name)}</p>
+        <p align="center"> Größe: ${data.height}</p>
+        <p align="center"> Gewicht: ${data.weight}</p>
+        <p align="center"> Items: ${heldItems(data.held_items)}</p>
+        <p align="center"> Fähigkeiten: ${abilities(data.abilities)}
+        <p align="center"> Anzahl der Attacken: ${getmovescount(data.moves)}</p>
+        <p align="center"> Base-Erfahrung bei Besiegung: ${data.base_experience}</p>
+        <p align="center"> ID: ${data.id}</p>
 
       </div>`;
     })
