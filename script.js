@@ -10,15 +10,21 @@ function lowerCaseName(string) {
 
 
 
-
-    for(let i = 0; i < heldItems.length; i++) {
-     var helditems_List =  heldItems[0].item.name
+function heldItems(heldItems) {
+    for(let i = 0; i < heldItems.length; i++) 
+    {
+      if (i == 0)
+      {
+        helditems_list = "folgende Items:";
+        helditems_list =  helditems_list + heldItems[i].item.name;
+      }
+      else
+      {		
+        helditems_list =  helditems_list + " und " + heldItems[i].item.name;
+      }
     }
-    return helditems_List;
-    
-  
-
-}
+    return helditems_list;
+   }
 
 function abilities(abilities) {
   for(let i = 0; i < abilities.length; i++) {
