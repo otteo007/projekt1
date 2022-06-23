@@ -45,8 +45,8 @@
         <div class="pokemonInfos">
           <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
           
-          <p>Das Pokemon hält folgendes item: ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
-          Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokemon hat folgende abilities: ${abilities(data.abilities)}.</p>
+          <p>Das Pokémon hält folgendes item: ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+          Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokémon hat folgende abilities: ${abilities(data.abilities)}.</p>
 
           
           
@@ -57,7 +57,7 @@
         document.querySelector(".pokemonBox").innerHTML = `
         <h4>Pokemon nicht gefunden 😞</h4>
         `;
-        console.log("Pokemon nicht gefunden", err);
+        console.log("Pokémon nicht gefunden", err);
 
       });
 
