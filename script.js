@@ -12,10 +12,23 @@ function heldItems(heldItems) {
 
 
 
-    for(let i = 0; i < heldItems.length; i++) {
-      return heldItems[i].item.name
+  //  for(let i = 0; i < heldItems.length; i++) {
+      
+      
+    //  return heldItems[i].item.name
+      
 
-    }
+    //}
+
+
+    let n = 0;
+
+    
+    
+  
+    
+    
+   
     
     
   
@@ -45,7 +58,7 @@ function getPokemon(e) {
       <div class="pokemonInfos">
         <h1><u>${capitalizeFirstLetter(data.name)}</u></h3>
         
-        <p>Das Pokemon hält folgendes item: ${heldItems(data.held_items)}.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
+        <p>Das Pokemon hält folgendes item:.  ${capitalizeFirstLetter(data.name)} ist ein Pokémon mit einem Gewicht von ${data.weight}. Außerdem hat es eine Höhe von ${data.height}.
         Das Pokémon hat die ID ${data.id}. Die Base xp die mann bekommt wenn man ${capitalizeFirstLetter(data.name)} besiegt sind ${data.base_experience}. Das Pokemon hat folgende abilities: ${abilities(data.abilities)}.</p>
 
         
